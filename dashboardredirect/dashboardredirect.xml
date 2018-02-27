@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>System - Dashboard Redirect</name>
+	<version>0.0.1</version>
+    <description><![CDATA[<p>Dashboard Redirect for Joomla 3.1.x. Created by <a href="https://blackbricksoftware.com/" target="_blank">Black Brick Software LLC</a>.</p>]]></description>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <author>Black Brick Software LLC</author>
+	<authorEmail>david@blackbricksoftware.com</authorEmail>
+	<authorUrl>https://blackbricksoftware.com</authorUrl>
+    <copyright>Copyright © 2015 Black Brick Software LLC. All rights reserved.</copyright>
+    <creationDate>5 October 2015</creationDate>
+	<files>
+		<folder>language</folder>
+		<filename plugin="dashboardredirect">dashboardredirect.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_dashboardredirect.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="redirecturl" type="text" default="" label="Redirect URL" description="URL to redirect to relative to the Joomla Admin base" />
+				<field name="usergroups" type="usergrouplist" label="Groups" description="User Groups to apply redirect"  multiple="true" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
