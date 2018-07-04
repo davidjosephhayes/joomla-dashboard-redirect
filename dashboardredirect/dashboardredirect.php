@@ -33,10 +33,10 @@ class PlgSystemDashboardRedirect extends JPlugin {
 		$layout = $app->input->get('layout');
 
 		// redirect front end login to backend
-		if (!$app->isAdmin() && $option=='com_users' && $view=='login') {
-			$app->redirect(JUri::root().'/administrator');
-			return;
-		}
+		// if (!$app->isAdmin() && $option=='com_users' && $view=='login') {
+		// 	$app->redirect(JUri::root().'/administrator');
+		// 	return;
+		// }
 		
 		$usergroups = $this->params->get('usergroups',array(),'array');
 		
